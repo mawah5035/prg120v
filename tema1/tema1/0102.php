@@ -1,9 +1,4 @@
-<?php    /* Eksempel 2*/
-
-/* Programmet mottar 2 tall fra et html-skjema ved post-metoden
-/* Programmet skriver ut de 2 tallene og summen og differansen av/mellom tallene
-*/
-
+<?php    
 $tall1= $_POST ["tall1"]; 
 $tall2= $_POST ["tall2"];
 

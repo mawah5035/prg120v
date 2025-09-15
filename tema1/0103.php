@@ -3,5 +3,5 @@
   $etternavn=$_POST ["etternavn"];
   $alder=$_POST ["alder"]; 
 	
-  print ("Jeg er $fornavn $etternavn og er $alder år gammel<br />");  
+  print ("God dag $fornavn $etternavn, du er $alder &aring;r og like sprek. <br />"); /* resultat skrevet ut */
 ?>

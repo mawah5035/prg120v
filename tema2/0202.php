@@ -1,15 +1,22 @@
-<?php    /* Eksempel 2 */
+<?php    /* Oppgave 2 */
 /*
-/*    Programmet mottar 2 tall fra et HTML-skjema ved POST-metoden
-/*    Programmet skriver ut de 2 tallene og summen og differansen av/mellom tallene
+/*    Programmet mottar fra et html-skjema et svar på spørsmålet "Er du student (j/n)?"
+/*    Programmet skjekker om det er svart j eller n på spørsmålet og skrivver ut en passende melding
 */
-  $tall1=$_POST ["tall1"];
-  $tall2=$_POST ["tall2"];  
+$svar=$_POST["svar"];
+if (!$svar) /*ikke svar på spørsmålet */
+  {
+  print("Du har ikke svart på spørsmålet <br/>");
 
-  $summen=$tall1 + $tall2;  
-  $differansen=$tall1 - $tall2;  
-			
-  print ("Tall 1 er $tall1 <br />");
-  print ("Tall 2 er $tall2 <br />");
-  print ("Summen er $summen <br />");
-  print ("Differansen er $differansen <br />"); 
+}
+else if ($svar=="ja") {
+  print("Du har svart ja på spørsmålet om du er student <br/>"); 
+}
+else if ($svar=="nei") 
+  {
+  print("Du har svart nei på spørsmålet om du er student <br/>");
+  }
+  else {
+    print("Du har ikke svart ja eller nei på spørsmålet om du er student <br/>");
+  }
+  ?>

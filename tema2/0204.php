@@ -6,7 +6,7 @@
 */ 
 
 $gift=$_POST["gift"];
-$barn=$_POST["barn"]; 
+$barn=$_POST["barn"];
 
 if (!$gift || !$barn) 
     {

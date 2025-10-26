@@ -1,9 +1,4 @@
-<?php     /* Oppgave 4 */ 
-/* 
-/*    Programmet mottar fra et HTML-skjema et svar på spørsmålene 
-/*      "Er du gift (j/n) ?" og "Har du barn (j/n) ?" 
-/*    Programmet sjekker om det er svart j eller n på spørsmålet og skriver ut en passende melding 
-*/ 
+<?php     
   $gift=$_POST ["gift"]; 
   $barn=$_POST ["barn"];    
   

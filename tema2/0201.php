@@ -10,9 +10,9 @@
   } 
   else { /*hvis ikke, vil andre print bli printet */
     print("Feil. 3 ganger 3 er ikke $svar. 3 ganger 3 er 9.");
-  }
-	 
-?> /* Slutten av php */
+  }	 
+?> 
+
 <!DOCTYPE html>
 <html>
 <head>

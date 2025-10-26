@@ -30,7 +30,7 @@ if      ($tall2 > $tall3 )
 
 else if ($tall2 == $tall3) 
 {
-    print ("$tall2 er lik $tall3");
+    print ("<br>$tall2 er lik $tall3");
 }
 else if ($tall2 < $tall3 )
     {

@@ -1,6 +1,6 @@
 <?php  
 
-  $svar=$_POST ["svar"]; 
+  $svar=$_POST["svar"]; 
 
   if ($svar==9) 
     {

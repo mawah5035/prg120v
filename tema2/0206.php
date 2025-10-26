@@ -3,7 +3,8 @@
 $tall1 = $_POST['tall1'];
 $tall2 = $_POST['tall2'];
 
-print("Tall 1 er $tall1 <br> Tall 2 er $tall2 <br>")
+print("Tall 1 er $tall1 <br> Tall 2 er $tall2 <br>");
+
 if ($tall1 > $tall2) {
     print("$tall1 er større enn $tall2");
 }

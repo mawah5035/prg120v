@@ -1,18 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Oppgave 3</title>
-</head>
-<body>
-  <h3>Oppgave 3</h3>
-    
-  <form method="post" action="tema1/0103.php" id="eksempel3" name="eksempel3">
-    Fornavn <input type="text" id="fornavn" name="fornavn" required /> <br />
-    Etternavn <input type="text" id="etternavn" name="etternavn" required /> <br />
-    Alder <input type="text" id="alder" name="alder" required /> <br />
-    <input type="submit" value="Fortsett" id="fortsett" name="fortsett" />
-    <input type="reset" value="Nullstill" name="nullstill" id="nullstill" /> <br />
-  </form>
-</body>
+<!DOCTYPE html> /* definerer dokument type */
+<html> /*åpner html dokument*/
+<head> /*åpner head seksjon*/
+  <title>Oppgave 3</title> /* tittel på nettsiden */
+</head> /* lukker head seksjon*/
 
-</html>
+<body> /*åpner body seksjon*/
+  <h3>Oppgave 3</h3> /* overskrift nivå 3 */
+    
+  <form method="post" action="tema1/0103.php" id="eksempel3" name="eksempel3"> /* starter et skjema som sender data med post metode til 0103.php, med id og navn eksempel3 */
+    Fornavn <input type="text" id="fornavn" name="fornavn" required /> <br /> /* tekst input felt for fornavn, med id og navn fornavn, required betyr at feltet må fylles ut før skjemaet kan sendes inn */
+    Etternavn <input type="text" id="etternavn" name="etternavn" required /> <br /> /* tekst input felt for etternavn, med id og navn etternavn, required betyr at feltet må fylles ut før skjemaet kan sendes inn */
+    Alder <input type="text" id="alder" name="alder" required /> <br /> /* tekst input felt for alder, med id og navn alder, required betyr at feltet må fylles ut før skjemaet kan sendes inn */
+    <input type="submit" value="Fortsett" id="fortsett" name="fortsett" /> /* submit knapp for å sende inn skjemaet med verdi fortsett, value blir navnet på knappen, med id og name fortsett */
+    <input type="reset" value="Nullstill" name="nullstill" id="nullstill" /> <br /> /* reset knapp for å nullstille skjemaet med verdi nullstill, value blir navnet på knappen, med id og name nullstill */
+  </form> /* lukker skjemaet */
+</body> /* lukker body seksjon*/
+
+</html> /* lukker html dokument*/

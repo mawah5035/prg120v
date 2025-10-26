@@ -1,17 +1,18 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Eksempel 2</title>
+<!DOCTYPE html> /* Definerer dokumenttypen som HTML5 */
+<html> /* starter html dokumentet */
+    <head> /* starter head seksjonen */
+        <title>Eksempel 2</title> /* setter tittelen på nettsiden til Eksempel 2 */
     
-    </head>
-    <body>
-        <h3>Eksempel 2</h3>
+    </head> /* slutter head sekjsonen */
 
-        <form method="post" action="tema1/tema1/0102.php" id="eksempel2" name="eksempel2">
-            tall 1<input type="text" id="tall1" name="tall1" required /> <br />
-            tall 2<input type="text" id="tall2" name="tall2" required /> <br />
-        <input type="submit" value="fortsett" id="fortsett" name="fortsett" />
-        <input type="reset" value="Nullstill" name="nullstill" id="nullstill" /> <br />       
-        </form>
-    </body>
-</html>
+    <body> /* starter body seksjon*/
+        <h3>Eksempel 2</h3> /* lager en overskrift på nivå 3 med teksten Eksempel 2 */
+
+        <form method="post" action="tema1/tema1/0102.php" id="eksempel2" name="eksempel2"> /* starter et skjema som sender data via POST-metoden til filen 0102.php når det blir sendt inn, id er for å koble til php og name er for å koble til css*/
+            tall 1<input type="text" id="tall1" name="tall1" required /> <br /> /* lager et tekstfelt for å skrive inn tall 1, id og name brukes for å koble til php og css, required betyr at feltet må fylles ut */
+            tall 2<input type="text" id="tall2" name="tall2" required /> <br /> /* lager et tekstfelt for å skrive tall 2, id og name brukes for å koble til php og css, required betyr at feltet må fylles ut */
+        <input type="submit" value="fortsett" id="fortsett" name="fortsett" /> /* lager knappen for å sende inn skjemaet, value blir navnet på knappen, id og name brukes for å koble til php og css */
+        <input type="reset" value="Nullstill" name="nullstill" id="nullstill" /> <br />  /* lager en knapp for å nullstillet svarene, value er navn på knappen, id og name er for å koble til php og css*/     
+        </form> /* slutter skjemaet */
+    </body> /* slutter body seksjonen */
+</html> /* slutter html dokumentet */

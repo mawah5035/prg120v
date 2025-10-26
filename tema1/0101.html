@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Eksempel 1</title>
-</head>
-<body>
-  <h3>Eksempel 1</h3>
+<!DOCTYPE html> /**viser hva slags type fil det er + navnet på filen**/
+<html> /**starter html-dokument **/
+<head> /**starter head-delen av dokumentet**/
+  <title>Eksempel 1</title> /**tittel på siden**/
+</head> /**slutter head-delen av dokumentet**/
+<body> /**starter body-delen av dokumentet**/
+  <h3>Eksempel 1</h3> /**overskrift på siden**/
     
-  <form method="post" action="tema1/0101.php" id="eksempel1" name="eksempel1">
-    Fornavn <input type="text" id="fornavn" name="fornavn" required  /> <br />
-    Etternavn <input type="text" id="etternavn" name="etternavn" required  /> <br />
-    <input type="submit" value="Fortsett" id="fortsett" name="fortsett" />
-    <input type="reset" value="Nullstill" name="nullstill" id="nullstill" /> <br />
-  </form>
+  <form method="post" action="tema1/0101.php" id="eksempel1" name="eksempel1"> /**starter skjemaet og sender data til filen som er addresert**/
+    Fornavn <input type="text" id="fornavn" name="fornavn" required  /> <br /> /**tekstboks for fornavn, det du kan skrive i er tekst, id er for å koble til med php, name er for å koble til css, required gjør den obligatorisk**/
+    Etternavn <input type="text" id="etternavn" name="etternavn" required  /> <br /> /**tekstboks for etternavn**/
+    <input type="submit" value="Fortsett" id="fortsett" name="fortsett" /> /**knapp for å sende inn skjemaet, value er det som står på knappen**/
+    <input type="reset" value="Nullstill" name="nullstill" id="nullstill" /> <br /> /**knapp for å nullstille skjemaet**/
+  </form> /**slutter skjemaet**/
 </body>
 </html>

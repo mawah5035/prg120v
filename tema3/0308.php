@@ -21,3 +21,4 @@ for ($tall=4; $tall>= 0;, $tall--)
     print("$tallArray[$tall] <br>");
 }
 ?>
+

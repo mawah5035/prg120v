@@ -1,6 +1,6 @@
 <?php
 
-$navn= $_POST["name"];
+$navn= $_POST["navn"];
 
 $del=explode(" ", $navn); 
 

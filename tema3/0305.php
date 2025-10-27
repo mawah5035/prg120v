@@ -5,7 +5,7 @@ $gjennomsnitt = 0;
 
 for ($tall=1; $tall <=10 ; $tall++) 
 { 
-     $sum = $sum + $tall;
+    $sum = $sum + $tall;
     $gjennomsnitt = $sum / 10;
 }
 

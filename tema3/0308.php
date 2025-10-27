@@ -10,15 +10,15 @@ print("Dine fem tall er $tall1 $tall2 $tall3 $tall4 $tall5 <br>");
 
 $tallArray = array($tall1, $tall2, $tall3, $tall4, $tall5);
 
-for ($tall=0;$tall<=4;$tall++) 
+for ($tall=0; $tall<=4; $tall++) 
 { 
-    print("$tallArray[$tall]");
+    print("$tallArray [$tall]");
 }
 print("<br>");
 
-for ($tall=4;$tall>=0;$tall--) 
+for ($tall=4; $tall>=0; $tall--) 
 { 
-    print("$tallArray[$tall]");
+    print("$tallArray [$tall]");
 }
 ?>
 

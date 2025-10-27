@@ -32,11 +32,11 @@ $lovligPostnr=validerPostnr($postnr); //valideringsfunksjon
 
 if ($lovligPostnr) //om den er korrekt
 {
-    print("Postnr er korrekt fylt ut"<br>);
+    print("Postnr er korrekt fylt ut");
 }
 else //om det ikke er korrekt
 {
-    print("Postnr er ikke korrekt utfylt")
+    print("Postnr er ikke korrekt utfylt");
 }
 ?>
 

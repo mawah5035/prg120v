@@ -43,7 +43,7 @@ if (!ctype_alpha($tegn1)) //skjekker om tegn 1 er bokstav, hvis ikke er den fals
         print("Tredje tegnet må være et bokstav <br>");
     }
 
-    (!ctype_digit($tegn4)) //skjekker om tegn 1 er tall, hvis ikke er den false og det blir printet ut at første tegnet ikke er en bokstav
+     if (!ctype_digit($tegn4)) //skjekker om tegn 1 er tall, hvis ikke er den false og det blir printet ut at første tegnet ikke er en bokstav
     {
         $lovligKlassekode=false; 
         print("Første tegnet må være en bokstav <br>");

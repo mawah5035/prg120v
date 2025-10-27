@@ -73,5 +73,4 @@ if (!ctype_alpha($tegn1)) //skjekker om tegn 1 er bokstav, hvis ikke er den fals
         print("Emnekoden er $emnekode <br>");
     }
 }
-  ?>
-    
+?>

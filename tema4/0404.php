@@ -23,7 +23,7 @@ function validerPostnr($postnr)
         $lovligPostnr=false;    
     }
 
-    returne $lovligPostnr; // returnerer true eller false og er slutt på funksjonen   
+    return $lovligPostnr; // returnerer true eller false og er slutt på funksjonen   
 }
 
 $postnr=$_POST["postnr"];

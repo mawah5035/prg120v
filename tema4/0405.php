@@ -1,7 +1,7 @@
 <?php
 
 
-funksjon validerKlassekode($klassekode) 
+function validerKlassekode($klassekode) 
 
 {
     $lovligKlassekode= true;

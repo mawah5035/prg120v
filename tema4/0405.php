@@ -25,7 +25,9 @@ function validerKlassekode($klassekode)
 
 }
 
-$klassekode = $_POST["klassekode"];
+$klassekode=$_POST["klassekode"];
+
+$lovligKlassekode= validerKlassekode($klassekode);
 
 if (valideringsfunksjon($klassekode))
 {

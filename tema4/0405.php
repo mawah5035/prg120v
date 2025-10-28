@@ -11,7 +11,7 @@ function validerKlassekode($klassekode)
         $lovligKlassekode=false;
     }
 
-    else if (strlen($klassekode)!=4)
+    else if (strlen($klassekode)!=3)
     {
         $lovligKlassekode=false;
     }
@@ -22,12 +22,11 @@ function validerKlassekode($klassekode)
     }
 
     return $lovligKlassekode;
-
 }
 
 $klassekode=$_POST["klassekode"];
 
-$lovligKlassekode=validerPostnr($klassekode); //valideringsfunksjon
+$lovligKlassekode=validerKlassekode($klassekode); //valideringsfunksjon
 
 if ($lovligKlassekode) //om den er korrekt
 {

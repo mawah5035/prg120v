@@ -27,14 +27,14 @@ function validerKlassekode($klassekode)
 
 $klassekode=$_POST["klassekode"];
 
-$lovligKlassekode= validerKlassekode($klassekode);
+$lovligKlassekode=validerPostnr($klassekode); //valideringsfunksjon
 
-if (valideringsfunksjon($klassekode))
+if ($lovligKlassekode) //om den er korrekt
 {
-    print("Klassekoden er gyldig");
+    print("Klassekoden er korrekt fylt ut");
 }
-else 
+else //om det ikke er korrekt
 {
-    print("Klassekoden er ugyldig");
+    print("Klassekoden er ikke korrekt utfylt");
 }
 ?>

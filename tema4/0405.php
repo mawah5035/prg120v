@@ -1,6 +1,5 @@
 <?php
 
-$klassekode = $_POST["klassekode"];
 
 funksjon validerKlassekode($klassekode) 
 
@@ -25,6 +24,8 @@ funksjon validerKlassekode($klassekode)
     return $lovligKlassekode;
 
 }
+
+$klassekode = $_POST["klassekode"];
 
 if (valideringsfunksjon($klassekode))
 {

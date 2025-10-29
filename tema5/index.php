@@ -10,16 +10,16 @@
     
     <h2> Studium: </h2>
     <ul>
-    <li><a href="registrerstudium.php"><button>Registere studium</button></a></li>
+    <li><a href="tema5/registrerstudium.php"><button>Registere studium</button></a></li>
     <li><a href="tema5/visallestudiumer.php"><button>Vis alle studium</button></a></li>
-    <li><a href="slettstudium.php"><button>Slett studium</button></a></li>
+    <li><a href="tema5/slettstudium.php"><button>Slett studium</button></a></li>
     </ul>
 
     <h2> Emner: </h2>
     <ul>
-    <li><a href="registreremne.php"><button>Registere emne</button></a></li>
-    <li><a href="visalleemner.php"><button>Vis alle emner</button></a></li>
-    <li><a href="slettemne.php"><button>Slett emne</button></a></li>
+    <li><a href="tema5/registreremne.php"><button>Registere emne</button></a></li>
+    <li><a href="tema5/visalleemner.php"><button>Vis alle emner</button></a></li>
+    <li><a href="tema5/slettemne.php"><button>Slett emne</button></a></li>
     </ul>
 
 </body>

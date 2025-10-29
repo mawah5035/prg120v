@@ -2,7 +2,7 @@
 
 include("db-tilkobling.php"); //Inkluderer database tilkoblings filen
 
-<h3> Vis alle studium </h3>;//Printer en overskrift
+//Printer en overskrift
 
 $sqlSetning= "SELECT * FROM studium ORDER BY studiumkode;"; //Lager en sql setning som henter alle emner
 $sqlResultat= mysqli_query($db, $sqlSetning) or die; //Kjører sql setningen mot databasen som er koblet til, sql resultatet er svaret fra databasen

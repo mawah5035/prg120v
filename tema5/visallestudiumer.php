@@ -11,9 +11,9 @@ $antallRader= mysqli_num_rows($sqlResultat); //Henter antall rader i sql resulta
 
 Print ("<h2>Registerte studiumer: </h2>"); //Printer en overskrift
 Print ("<table border=1>"); //Starter en tabell med border
-Print ("<tr><th align=left>Studiumkode</th><th align=left>Studiumnavn</th></tr>"); //Printer tabell overskrifter, tr for tabell row, th for tabell header
+Print ("<tr><th align=left>Studiumkode</th> <th align=left>Studiumnavn</th></tr>"); //Printer tabell overskrifter, tr for tabell row, th for tabell header
 
-for ($r=1; $r<=$antallRader; $r+) 
+for ($r=1;$r<=$antallRader;$r++) 
 { 
      $rad= mysqli_fetch_array($sqlResultat); //Henter en rad av gangen fra sql resultatet
      $emnekode= $rad["studiumkode"]; //Henter emnekode fra raden

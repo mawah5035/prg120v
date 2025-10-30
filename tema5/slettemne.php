@@ -11,6 +11,9 @@ include("db-tilkobling.php"); //inkluderer ekstern php
 <?php //starter andre php
 $sqlSetning="SELECT * FROM emne ORDER BY emnekode"; //sql setningen henter emnekodene som er lagt inn i databasen
 $resultat= mysqli_query($db, $sql); //resultatet blir at lagret i $resultater, db er koblingen til databasen og sql inneholder spørringen som henter emnekode og emnenavn fra tabellen. 
+if (!$resultat) {
+    echo "<p style='color:red;'>Feil ved henting av emner: " . mysqli_error($db) . "</p>";
+}
 
 while ($rad= mysqli_fetch_array($resultat)) //while går igjennom hver rad i resuktatet fra databasen, mysqli_fetch_array henter en rad om gangen som et assosiastivt array. 
 {

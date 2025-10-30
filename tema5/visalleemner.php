@@ -1,25 +1,31 @@
-<?php //Åpner php fil
-
-include("db-tilkobling.php"); //Inkluderer database tilkoblings filen
-
-$sqlSetning= "SELECT * FROM emne ORDER BY emnekode;"; //Lager en sql setning som henter alle emner
-$sqlResultat= mysqli_query($db, $sqlSetning) or die; //Kjører sql setningen mot databasen som er koblet til, sql resultatet er svaret fra databasen
-
-$antallRader= mysqli_num_rows($sqlResultat); //Henter antall rader i sql resultatet
-
-Print ("<h2>Registerte emner: </h2>"); //Printer en overskrift
-Print ("<table border=1>"); //Starter en tabell med border
-Print ("<tr><th align=left>Emnekode</th><th align=left>Emnenavn</th></tr>"); //Printer tabell overskrifter, tr for tabell row, th for tabell header
-
-for ($r=1;$r<=$antallRader;$r++) 
-{ 
-     $rad= mysqli_fetch_array($sqlResultat); //Henter en rad av gangen fra sql resultatet
-     $emnekode= $rad["emnekode"]; //Henter emnekode fra raden
-     $emnenavn= $rad["emnenavn"]; //Henter emnenavn fra raden
-
-     Print ("<tr><td>$emnekode</td> <td>$emnenavn</td></tr>"); //Printer emnekode og emnenavn i tabell rader, td for tabell data
-}
-Print ("</table>"); //Avslutter tabellen
-
-?>
-
+<?php     /* vis-alle-emner */ 
+/* 
+/*    Programmet skriver ut alle registrerte emner  
+*/ 
+   
+ 
+  include("db-tilkobling.php");  /* tilkobling til database-serveren utført og valg av database foretatt */ 
+ 
+  $sqlSetning="SELECT * FROM emne ORDER BY emnekode;"; 
+  $sqlResultat=mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; hente data fra databasen");  /* 
+SQL-setning sendt til database-serveren */ 
+  $antallRader=mysqli_num_rows($sqlResultat);  /* antall rader i resultatet beregnet */ 
+ 
+  print ("<h3>Registrerte emnee </h3>");  
+  print ("<table border=1>"); 
+  print ("<tr><th align=left>emnekode</th> <th align=left>emnenavn</th> <th align=left>studiumkode</th> 
+</tr>"); 
+ 
+  for ($r=1;$r<=$antallRader;$r++) 
+    { 
+      $rad=mysqli_fetch_array($sqlResultat);  /* ny rad hentet fra spørringsresultatet */ 
+      $emnekode=$rad["emnekode"];  
+      $emnenavn=$rad["emnenavn"];  
+      $studiumkode=$rad["studiumkode"]; 
+ 
+      print ("<tr> <td> $emnekode </td> <td> $emnenavn </td> <td> $studiumkode </td> </tr>");   
+    } 
+  print ("</table>");  
+ 
+   
+?> 

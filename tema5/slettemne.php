@@ -16,6 +16,7 @@
 if (isset($_POST ["submit"])) 
 {
   $emnekode=$_POST ["emnekode"];
+  $emnenavn=$_POST ["emnenavn"];
 
     include("db-tilkobling.php");
 

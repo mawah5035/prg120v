@@ -10,7 +10,7 @@
     
     <h2> Studium: </h2>
     <ul>
-    <li><a href="tema5/registrerstudium.php"><button>Registere studium</button></a></li>
+    <li><a href="tema5/registererstudium.php"><button>Registere studium</button></a></li>
     <li><a href="tema5/visallestudiumer.php"><button>Vis alle studium</button></a></li>
     <li><a href="tema5/slettstudium.php"><button>Slett studium</button></a></li>
     </ul>

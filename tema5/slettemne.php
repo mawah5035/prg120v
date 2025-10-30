@@ -47,14 +47,12 @@ if (isset($_POST["submit"]))
         $skjekk= "SELECT * FROM emne WHERE emnekode='$emnekode'";
         $resultat= mysqli_query($db, $skjekk);
 
-        if (mysqli_num_rows($resultat) == 0){
+        if (mysqli_num_rows($resultat) > 0){
             $sql = "DELETE FROM emne WHERE emnekode='$emnekode'";
-            if (mysqli_query($db, $sql))
-            {
-                echo "<p style='color:green;'> Klassen med klassekode <strong>$klassekode</strong> er slettet fra databasen.</p>";
+            if (mysqli_query($db, $sql)){
+                echo "<p style='color:green;'> Emne med emnekode <strong>$emnekode</strong> er slettet fra databasen.</p>";
             }
-            else
-            {
+            else{
                 echo "<p style='color:red;'> Feil ved sletting: " . mysqli_error($db) . "</p>";
             }
         }

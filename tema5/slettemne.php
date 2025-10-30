@@ -28,8 +28,7 @@ while ($rad= mysqli_fetch_array($resultat)) //while går igjennom hver rad i res
 <input type="submit" value="Slett emne" id="submit" name="submit"/>
 </form>
 
-
-
+<?php
 
 if (isset($_POST ["submit"])) 
 {

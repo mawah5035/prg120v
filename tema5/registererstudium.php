@@ -4,7 +4,7 @@
 <h3>Registrer Studium</h3>
 
 <form method="post" action="" id="registrerStudium" name="registrerStudium" >
-    Studiumkode: <input type= "text" id="studiumkode" name="studiumkode" required />
+    Studiumkode: <input type= "text" id="studiumkode" name="studiumkode" required /> <br>
     Studiumnavn: <input type= "text" id="studiumnavn" name="studiumnavn" required />
     <input type="submit" value="Send inn" id="submit" name="submit"/>
     <input type="reset" value= "Nullstill" id="nullstill" name="nullstill"/>

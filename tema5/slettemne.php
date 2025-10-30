@@ -21,7 +21,7 @@ while ($rad= mysqli_fetch_array($resultat)) //while går igjennom hver rad i res
     $emnekode=$rad["emnekode"];
     $emnenavn=$rad["emnenavn"];
     //skriver ut en option element som får brukeren til å kunne velge 
-    echo "<option value= '$emnekode'>$emnekode - $emnenavn</option>";
+    echo "<option value='$emnekode'>$emnekode - $emnenavn</option>";
 }
 //slutter andre php
 ?> 

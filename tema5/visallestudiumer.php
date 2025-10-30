@@ -16,8 +16,8 @@ Print ("<tr><th align=left>Studiumkode</th> <th align=left>Studiumnavn</th></tr>
 for ($r=1;$r<=$antallRader;$r++) 
 { 
      $rad= mysqli_fetch_array($sqlResultat); //Henter en rad av gangen fra sql resultatet
-     $emnekode= $rad["studiumkode"]; //Henter emnekode fra raden
-     $emnenavn= $rad["studiumnavn"]; //Henter emnenavn fra raden
+     $studiumkode= $rad["studiumkode"]; //Henter emnekode fra raden
+     $studiumnavn= $rad["studiumnavn"]; //Henter emnenavn fra raden
 
      Print ("<tr><td>$studiumkode</td><td>$studiumnavn</td></tr>"); //Printer emnekode og emnenavn i tabell rader, td for tabell data
 }

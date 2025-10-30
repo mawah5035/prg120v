@@ -13,7 +13,7 @@
 
 <?php
 
-if (isset($_POST ["slettemne"])) 
+if (isset($_POST ["submit"])) 
 {
   $emnekode=$_POST ["emnekode"];
 

@@ -30,17 +30,39 @@ while ($rad= mysqli_fetch_array($resultat)) //while går igjennom hver rad i res
 
 <?php
 
-if (isset($_POST ["submit"])) 
+if (isset($_POST["submit"]))
 {
-  $emnekode=$_POST ["emnekode"];
-  $emnenavn=$_POST ["emnenavn"];
+    $emnekode= $_POST["emnekode"];
 
-    $sqlSetning="DELETE FROM emne WHERE emnekode='$emnekode';";
-    mysqli_query($db, $sqlSetning) or die ("ikke mulig å slette data i databasen");
+    if (empty($emnekode))
+    {
+        echo "<p style='color:red;'> Du m&aring; velge et emne å slette!</p>";
+    }
 
-    Print ("Følgende emnekode er nå slettet: $emnekode $emnenavn");
+    else
+    {
+        $skjekk= "SELECT * FROM emne WHERE emnekode='$emnekode'";
+        $resultat= mysqli_query($db, $skjekk);
+
+        if (mysqli_num_rows($resultat) == 0){
+            $sql = "DELETE FROM emne WHERE emnekode='$emnekode'";
+            if (mysqli_query($db, $sql))
+            {
+                echo "<p style='color:green;'> Klassen med klassekode <strong>$klassekode</strong> er slettet fra databasen.</p>";
+            }
+            else
+            {
+                echo "<p style='color:red;'> Feil ved sletting: " . mysqli_error($db) . "</p>";
+            }
+        
+        else
+        {
+            echo "<p style='color:red;'> Feil: Kan ikke slette klasse med studenter i </p>";
+        }
+
+      }
+    }
 }
-
 ?>
   
 

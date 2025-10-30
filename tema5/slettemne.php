@@ -50,12 +50,12 @@ if (isset($_POST["submit"]))
             {
                 echo "<p style='color:green;'> Klassen med klassekode <strong>$klassekode</strong> er slettet fra databasen.</p>";
             }
-            else
+            if else
             {
                 echo "<p style='color:red;'> Feil ved sletting: " . mysqli_error($db) . "</p>";
             }
         
-        else
+          else
         {
             echo "<p style='color:red;'> Feil: Kan ikke slette klasse med studenter i </p>";
         }

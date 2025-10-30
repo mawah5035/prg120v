@@ -37,7 +37,7 @@ if (isset($_POST ["registrerEmne"])) // trim er for å hindre feil ved sammenlig
             $sqlSetning= "INSERT INTO emne (emnekode, emnenavn, studiumkode)
                            VALUES ('$emnekode', '$emnenavn', '$studiumkode')";
 
-            echo ("Følgende emne er nå registert: $emnekode $emnenavn $studiumkode");
+            echo "Følgende emne er nå registert: $emnekode $emnenavn $studiumkode";
         } else {
             echo "Feil ved registereing". mysqli_error($db);
         }

@@ -32,17 +32,17 @@ if (isset($_POST ["registrerEmne"])) // trim er for å hindre feil ved sammenlig
         $resultat = mysqli_query($db, $skjekk);
 
         if (mysqli_num_rows($resultat) > 0) {
-            echo ("$emnekode er registerert fra før");
-        } else {
-            $sqlSetning= "INSERT INTO emne (emnekode, emnenavn, studiumkode)
-                           VALUES ('$emnekode', '$emnenavn', '$studiumkode')";
-                           
-        if (mysqli_query($db, $sqlSetning))
+    echo ("$emnekode er registrert fra før");
+} else {
+    $sqlSetning = "INSERT INTO emne (emnekode, emnenavn, studiumkode)
+                   VALUES ('$emnekode', '$emnenavn', '$studiumkode')";
 
-            echo "Følgende emne er nå registert: $emnekode $emnenavn $studiumkode";
-        } else {
-            echo "Feil ved registereing". mysqli_error($db);
-        }
+    if (mysqli_query($db, $sqlSetning)) {
+        echo "Følgende emne er nå registrert: $emnekode $emnenavn $studiumkode";
+    } else {
+        echo "Feil ved registrering: " . mysqli_error($db);
+    }
+}
     }
 
 }

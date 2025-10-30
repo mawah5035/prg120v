@@ -8,7 +8,7 @@ include("db-tilkobling.php"); //inkluderer ekstern php
     <select name="emnekode" id="emnekode" required>
         <option value="" >--Velg emne---</option>
 
-<?php //starter ny php
+<?php //starter andre php
 $sqlSetning="SELECT * FROM emne ORDER BY emnekode"; //sql setningen henter emnekodene som er lagt inn i databasen
 $resultat= mysqli_query($db, $sql); //resultatet blir at lagret i $resultater, db er koblingen til databasen og sql inneholder spørringen som henter emnekode og emnenavn fra tabellen. 
 
@@ -18,9 +18,10 @@ while ($rad= mysqli_fetch_array($resultat)) //while går igjennom hver rad i res
     $emnekode=$rad["emnekode"];
     $emnenavn=$rad["emnenavn"];
     //skriver ut en option element som får brukeren til å kunne velge 
-    Print "<option value= '$emnekode'>$emnekode . $emnenavn</option>";
+    echo "<option value= '$emnekode'>$emnekode - $emnenavn</option>";
 }
-?>
+//slutter andre php
+?> 
 </select>
 
 <br><br>

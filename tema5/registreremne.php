@@ -36,6 +36,8 @@ if (isset($_POST ["registrerEmne"])) // trim er for å hindre feil ved sammenlig
         } else {
             $sqlSetning= "INSERT INTO emne (emnekode, emnenavn, studiumkode)
                            VALUES ('$emnekode', '$emnenavn', '$studiumkode')";
+                           
+        if (mysqli_query($db, $sqlSetning))
 
             echo "Følgende emne er nå registert: $emnekode $emnenavn $studiumkode";
         } else {

@@ -31,7 +31,7 @@ if (isset($_POST ["submit"]))
 
         if ($antallRader!=0) 
         {
-            Print ("Studiumer registerert fra før")
+            Print ("Studiumer registerert fra før");
         }
         else 
         {

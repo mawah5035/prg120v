@@ -4,10 +4,10 @@
  
 <form method="post" action="" id="velgAvisSkjema" name="velgAvisSkjema">
     Avis <br>
-    <input type="checkbox" id="avis" name="avis" value="aftenposten" />Aftenposten <br>
-    <input type="checkbox" id="avis" name="avis" value="dagbladet"/>Dagbladet <br>
-    <input type="checkbox" id="avis" name="avis" value="dn" />dn <br>
-    <input type="checkbox" id="avis" name="avis" value="vg" />vg <br>
+    <input type="checkbox" id="avis" name="avis[]" value="aftenposten" />Aftenposten <br>
+    <input type="checkbox" id="avis" name="avis[]" value="dagbladet"/>Dagbladet <br>
+    <input type="checkbox" id="avis" name="avis[]" value="dn" />dn <br>
+    <input type="checkbox" id="avis" name="avis[]" value="vg" />vg <br>
     <input type="submit" value=" Velg aviser" id="velgAviserKnapp" name="velgAviserKnapp">
 </form>
 

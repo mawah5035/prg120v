@@ -20,7 +20,7 @@ if (isset($_POST ["velgAviserKnapp"]))
 
     if ($antall==0) //skjekker om antall valgt er null, hvis det er null sp blir det printet at ingen er valgt
     {
-        print ("ingen aviser er valgt >br>")
+        print ("ingen aviser er valgt <br>");
     }
     else { //ellers hvis noen av de er valgt, blir det printet det nedenfor med hjelp av for setning
         print ("Følgende aviser er valgt: <br>");
